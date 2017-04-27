@@ -111,152 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named libev_multithread
+# Target rules for targets named server
 
 # Build rule for target.
-libev_multithread: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libev_multithread
-.PHONY : libev_multithread
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
 # fast build rule for target.
-libev_multithread/fast:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/build
-.PHONY : libev_multithread/fast
+server/fast:
+	$(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
+.PHONY : server/fast
 
-src/conn_queue.o: src/conn_queue.cpp.o
+#=============================================================================
+# Target rules for targets named client
 
-.PHONY : src/conn_queue.o
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
 
-# target to build an object file
-src/conn_queue.cpp.o:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/conn_queue.cpp.o
-.PHONY : src/conn_queue.cpp.o
-
-src/conn_queue.i: src/conn_queue.cpp.i
-
-.PHONY : src/conn_queue.i
-
-# target to preprocess a source file
-src/conn_queue.cpp.i:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/conn_queue.cpp.i
-.PHONY : src/conn_queue.cpp.i
-
-src/conn_queue.s: src/conn_queue.cpp.s
-
-.PHONY : src/conn_queue.s
-
-# target to generate assembly for a file
-src/conn_queue.cpp.s:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/conn_queue.cpp.s
-.PHONY : src/conn_queue.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
-src/server.o: src/server.cpp.o
-
-.PHONY : src/server.o
-
-# target to build an object file
-src/server.cpp.o:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/server.cpp.o
-.PHONY : src/server.cpp.o
-
-src/server.i: src/server.cpp.i
-
-.PHONY : src/server.i
-
-# target to preprocess a source file
-src/server.cpp.i:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/server.cpp.i
-.PHONY : src/server.cpp.i
-
-src/server.s: src/server.cpp.s
-
-.PHONY : src/server.s
-
-# target to generate assembly for a file
-src/server.cpp.s:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/server.cpp.s
-.PHONY : src/server.cpp.s
-
-src/smart_thing.o: src/smart_thing.cpp.o
-
-.PHONY : src/smart_thing.o
-
-# target to build an object file
-src/smart_thing.cpp.o:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/smart_thing.cpp.o
-.PHONY : src/smart_thing.cpp.o
-
-src/smart_thing.i: src/smart_thing.cpp.i
-
-.PHONY : src/smart_thing.i
-
-# target to preprocess a source file
-src/smart_thing.cpp.i:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/smart_thing.cpp.i
-.PHONY : src/smart_thing.cpp.i
-
-src/smart_thing.s: src/smart_thing.cpp.s
-
-.PHONY : src/smart_thing.s
-
-# target to generate assembly for a file
-src/smart_thing.cpp.s:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/smart_thing.cpp.s
-.PHONY : src/smart_thing.cpp.s
-
-src/sock.o: src/sock.cpp.o
-
-.PHONY : src/sock.o
-
-# target to build an object file
-src/sock.cpp.o:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/sock.cpp.o
-.PHONY : src/sock.cpp.o
-
-src/sock.i: src/sock.cpp.i
-
-.PHONY : src/sock.i
-
-# target to preprocess a source file
-src/sock.cpp.i:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/sock.cpp.i
-.PHONY : src/sock.cpp.i
-
-src/sock.s: src/sock.cpp.s
-
-.PHONY : src/sock.s
-
-# target to generate assembly for a file
-src/sock.cpp.s:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/src/sock.cpp.s
-.PHONY : src/sock.cpp.s
+# fast build rule for target.
+client/fast:
+	$(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/build
+.PHONY : client/fast
 
 # Help Target
 help:
@@ -266,22 +144,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... libev_multithread"
-	@echo "... src/conn_queue.o"
-	@echo "... src/conn_queue.i"
-	@echo "... src/conn_queue.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
-	@echo "... src/server.o"
-	@echo "... src/server.i"
-	@echo "... src/server.s"
-	@echo "... src/smart_thing.o"
-	@echo "... src/smart_thing.i"
-	@echo "... src/smart_thing.s"
-	@echo "... src/sock.o"
-	@echo "... src/sock.i"
-	@echo "... src/sock.s"
+	@echo "... server"
+	@echo "... client"
 .PHONY : help
 
 

@@ -30,7 +30,7 @@ bool server_sock::init(int* lsn){
         return  false;
     }
 
-    rst = listen(*lsn, 1024);
+    rst = listen(*lsn, 102400);
     if(rst == -1){
         return  false;
     }

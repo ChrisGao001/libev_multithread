@@ -2,9 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 project(libev_multithread)
 
 set(CMAKE_CXX_STANDARD 11)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
-set(SOURCE_FILES
-        src/main.cpp src/conn_queue.cpp src/conn_queue.h src/server.cpp src/server.h src/define.h src/smart_thing.cpp src/smart_thing.h src/server_sock.cpp src/server_sock.h)
+add_subdirectory(server)
+add_subdirectory(client)
 
-add_executable(libev_multithread ${SOURCE_FILES})
-target_link_libraries(libev_multithread ev pthread)

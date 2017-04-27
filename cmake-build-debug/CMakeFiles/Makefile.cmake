@@ -8,9 +8,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../client/CMakeLists.txt"
   "CMakeFiles/3.6.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.6.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.6.3/CMakeSystem.cmake"
+  "../server/CMakeLists.txt"
   "/home/sean/Tools/clion-2016.3.4/bin/cmake/share/cmake-3.6/Modules/CMakeCInformation.cmake"
   "/home/sean/Tools/clion-2016.3.4/bin/cmake/share/cmake-3.6/Modules/CMakeCXXInformation.cmake"
   "/home/sean/Tools/clion-2016.3.4/bin/cmake/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake"
@@ -40,9 +42,12 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "server/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "client/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/libev_multithread.dir/DependInfo.cmake"
+  "server/CMakeFiles/server.dir/DependInfo.cmake"
+  "client/CMakeFiles/client.dir/DependInfo.cmake"
   )

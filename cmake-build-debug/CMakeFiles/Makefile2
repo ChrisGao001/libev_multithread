@@ -60,39 +60,112 @@ CMAKE_SOURCE_DIR = /home/sean/CLionProjects/libev_multithread
 CMAKE_BINARY_DIR = /home/sean/CLionProjects/libev_multithread/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/libev_multithread.dir
+# Directory level rules for directory server
+
+# Convenience name for "all" pass in the directory.
+server/all: server/CMakeFiles/server.dir/all
+
+.PHONY : server/all
+
+# Convenience name for "clean" pass in the directory.
+server/clean: server/CMakeFiles/server.dir/clean
+
+.PHONY : server/clean
+
+# Convenience name for "preinstall" pass in the directory.
+server/preinstall:
+
+.PHONY : server/preinstall
+
+#=============================================================================
+# Target rules for target server/CMakeFiles/server.dir
 
 # All Build rule for target.
-CMakeFiles/libev_multithread.dir/all:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/depend
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sean/CLionProjects/libev_multithread/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target libev_multithread"
-.PHONY : CMakeFiles/libev_multithread.dir/all
+server/CMakeFiles/server.dir/all:
+	$(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/depend
+	$(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sean/CLionProjects/libev_multithread/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target server"
+.PHONY : server/CMakeFiles/server.dir/all
 
 # Include target in all.
-all: CMakeFiles/libev_multithread.dir/all
+all: server/CMakeFiles/server.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/libev_multithread.dir/rule: cmake_check_build_system
+server/CMakeFiles/server.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sean/CLionProjects/libev_multithread/cmake-build-debug/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/libev_multithread.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 server/CMakeFiles/server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sean/CLionProjects/libev_multithread/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/libev_multithread.dir/rule
+.PHONY : server/CMakeFiles/server.dir/rule
 
 # Convenience name for target.
-libev_multithread: CMakeFiles/libev_multithread.dir/rule
+server: server/CMakeFiles/server.dir/rule
 
-.PHONY : libev_multithread
-
-# clean rule for target.
-CMakeFiles/libev_multithread.dir/clean:
-	$(MAKE) -f CMakeFiles/libev_multithread.dir/build.make CMakeFiles/libev_multithread.dir/clean
-.PHONY : CMakeFiles/libev_multithread.dir/clean
+.PHONY : server
 
 # clean rule for target.
-clean: CMakeFiles/libev_multithread.dir/clean
+server/CMakeFiles/server.dir/clean:
+	$(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/clean
+.PHONY : server/CMakeFiles/server.dir/clean
+
+# clean rule for target.
+clean: server/CMakeFiles/server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory client
+
+# Convenience name for "all" pass in the directory.
+client/all: client/CMakeFiles/client.dir/all
+
+.PHONY : client/all
+
+# Convenience name for "clean" pass in the directory.
+client/clean: client/CMakeFiles/client.dir/clean
+
+.PHONY : client/clean
+
+# Convenience name for "preinstall" pass in the directory.
+client/preinstall:
+
+.PHONY : client/preinstall
+
+#=============================================================================
+# Target rules for target client/CMakeFiles/client.dir
+
+# All Build rule for target.
+client/CMakeFiles/client.dir/all:
+	$(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/depend
+	$(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sean/CLionProjects/libev_multithread/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target client"
+.PHONY : client/CMakeFiles/client.dir/all
+
+# Include target in all.
+all: client/CMakeFiles/client.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+client/CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sean/CLionProjects/libev_multithread/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 client/CMakeFiles/client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sean/CLionProjects/libev_multithread/cmake-build-debug/CMakeFiles 0
+.PHONY : client/CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: client/CMakeFiles/client.dir/rule
+
+.PHONY : client
+
+# clean rule for target.
+client/CMakeFiles/client.dir/clean:
+	$(MAKE) -f client/CMakeFiles/client.dir/build.make client/CMakeFiles/client.dir/clean
+.PHONY : client/CMakeFiles/client.dir/clean
+
+# clean rule for target.
+clean: client/CMakeFiles/client.dir/clean
 
 .PHONY : clean
 
